@@ -1,5 +1,13 @@
 {
   "scripts": {
+    "build": "echo '草神的智慧正在发芽~'",
+    "prebuild": "npm install --omit=dev",
+    "ci-test": "concurrently...",
+    "test": "mocha",
+    "start": "npx wrangler..."
+  },
+{
+  "scripts": {
     "ci-test": "concurrently --kill-others \"npm start\" \"wait-on http://localhost:8080 && mocha\"",
     "test": "mocha",
     "start": "npx wrangler pages dev ./ --kv \"img_url\" --r2 \"img_r2\" --port 8080 --persist-to ./data"
