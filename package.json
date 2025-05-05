@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "echo '草神的智慧正在发芽~'",
+    "build": "echo '自己加的神奇东西运作ing'",
     "prebuild": "npm install --omit=dev",
     "ci-test": "concurrently...",
     "test": "mocha",
